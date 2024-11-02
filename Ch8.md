@@ -91,7 +91,7 @@ or on demand, as in a datagram network
 
 **Addressing**
 - In a virtual-circuit network, two types of addressing are involved: global and local
-- **Global Addressing:**A source or a destination needs to have a global address-an address that can be unique
+- **Global Addressing:** A source or a destination needs to have a global address-an address that can be unique
 in the scope of the network or internationally if the network is part of an international
 network. 
 - **Virtual-Circuit Identifier:**
