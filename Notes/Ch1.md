@@ -17,7 +17,7 @@
 ---
 - **Simplex:** In simplex mode, the communication is unidirectional, as on a one-way street. Only one of the two devices on a link can transmit; the other can only receive. Keyboards and traditional monitors are examples of simplex devices. The keyboard can only introduce input; the monitor can only accept output.
 - **Half-Duplex:** In half-duplex mode, each station can both transmit and receive, but not at the same time.When one device is sending, the other can only receive, and vice versa.Walkie-talkies and CB (citizens band) radios are both half-duplex systems.
-- **Full-Duplex:** both stations can transmit and receive simultaneously.Either the link must contain two physically separate transmission paths, one for sending and the other for receiving; or the capacity of the ch:arillilel is divided between signals traveling in both directions.Eg, telephone network.both can talk and listen at the same time.
+- **Full-Duplex:** both stations can transmit and receive simultaneously.Either the link must contain two physically separate transmission paths, one for sending and the other for receiving; or the capacity of the channel is divided between signals traveling in both directions.Eg, telephone network.both can talk and listen at the same time.
 
 <img src="Images/Screenshot 2024-09-24 151642.png" width="" height="">
 
