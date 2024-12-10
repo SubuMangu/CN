@@ -3,6 +3,7 @@
 ---
 - Refer to the diagrams  slide for better understanding.
 - Pratice the questions disscused in the slide
+- 
 **Frequency**
 ---
 - **Frequency** is the rate of change with respect to time. Change in a short span of time means high frequency. Change over a long span of time means low frequency.
