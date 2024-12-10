@@ -1,4 +1,8 @@
 # Chapter 4
+**Introduction**
+- Conversion of digital data to electrical signals is necessary for transmission.
+- These electrical signals can be analogue or digital.
+- We will discuss in this chapter about how we can convert the digital data into signals.
 **Digital to digital conversion**
 ---
 - In this section, we see how we can represent digital data by using digital signals.
@@ -8,29 +12,35 @@
 ---
 - Line coding is the process of converting digital data to digital signals.
 - We assume that data, in the form of text, numbers, graphical images, audio, or video, are stored in computer memory as sequences of bits.
- Line coding converts a sequence of bits to a digital signal. At the sender, digital data are encoded into a digital signal; at the receiver, the digital data are recreated by decoding the digital signal. 
+- Line coding converts a sequence of bits to a digital signal. At the sender, digital data are encoded into a digital signal; at the receiver, the digital data are recreated by decoding the digital signal. 
 
  **Signal element versus data element**
 
  <img src="Images/Screenshot 2024-09-26 113859.png" width="" height="">
 
- - A data element is the smallest entity that can represent a piece of information.
- - A signal element is the shortest unit of datra we can send. 
- - r represents the data unit
- - **Data Rate:** The data rate defines the number of data elements (bits) sent in 1s. The unit is bits per sec(bps).
-- **Signal rate:** The signal rate is the number of signal elements sent in 1s.The unit is the baud.
-- One goal in data communications is to increase the data rate while decreasing the signal rate. 
-- Increasing the data rate increases the speed of transmission; decreasing the signal rate decreases the bandwidth(Bandwidth in Bits per Seconds) requirement. In our vehicle-people analogy, we need to carry more people in fewer vehicles to prevent traffic jams.
-- bandwidth here is talking about the capacity of the communication channel to carry data
-- The minimum bandwidth can be given as
+ - A **data element** is the smallest entity that can represent a piece of information.
+ - A **signal element** is the shortest unit of data we can transmit. 
+ - **Data Rate($N$):** The data rate defines the number of data elements (bits) sent in 1s. The unit is bits per sec(bps).
+- **Signal rate($S$):** The signal rate is the number of signal elements sent in 1s.The unit is the baud.
+- $r$ represents the **maximum data bits a signal can carry**
+- $c$ represents the **case factor**, which state the efficiency of an enconding scheme in enabling a signal to carry $r$ data bits.
+- Hence the relationship between the signal rate($S$) and data rate($N$) is:
+$$S=c\times N \times \frac{1}{r}$$
+- If `c=1` then a signal can carry it's maximum data bits i.e, $r$.
+- Hence, the maximum bit rate possible is:
+$$N_{max}=S \times r (\text{c is equal to 1})$$
+- One goal in data communications is to increase the data rate while decreasing the signal rate.Just like being able to carry more goods with less vehicles. 
+- Increasing the data rate increases the speed of transmission; decreasing the signal rate decreases the bandwidth requirement.The reason is because of the relation shown below:
+$$S\uparrow \implies \text{frequency of signals transmitted} \uparrow \newline \implies B \uparrow (\text{Since Bandwidth equals to frequency in low pass channel})$$ 
+- Hence minimum bandwidth requirement is the signal rate.
 
-$$B_{min}=c \times N \times \frac{1}{r}$$
+$$B_{min}=S=c \times N \times \frac{1}{r}$$
 - maximum data rate if the bandwidth of the channel is given
 $$N_{max}=\frac{1}{c} \times B \times r$$
 
 <img src="Images/Screenshot 2024-09-27 155603.png" width="450" height="">
 
-**Characteristics of digital to digital conversion**
+**Problems in digital to digital conversion**
 ---
 **Baseline Wandering** 
 - In decoding a digital signal, the receiver calculates a running
@@ -40,10 +50,9 @@ and make it difficult for the receiver to decode correctly.
 
 **DC Components** 
 - When the voltage level in a digital signal is constant for a while,
-the spectrum creates very low frequencies (results of Fourier analysis). These fre-
-quencies around zero, called DC (direct-current) components.
+the spectrum creates very low frequencies (results of Fourier analysis). These frequencies around zero, called DC (direct-current) components.
 - Problem occurs when the signal passes through a system where low frequencies cannot pass or a system that uses electrical coupling
-(via a transformer).
+(like transformer).
 - Eg,For example, a telephone line cannot pass frequencies below 200 Hz. Also a long-distance link may use one or more transformers to isolate
 different parts of the line electrically. For these systems, we need a scheme with no
 DC component.
