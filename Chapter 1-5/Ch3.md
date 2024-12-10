@@ -153,6 +153,7 @@ nal1eve1s, we impose a burden on the receiver. Ifthe number of levels in a signa
 the receiver can easily distinguish between a 0 and a 1. If the level of a signal is 64, the
 receiver must be very sophisticated to distinguish between 64 different levels.
 - Increasing the levels of a signal may reduce the reliability of the system.
+- Refer the ppt for problems
 
 **Noisy Channel: Shannon Capacity**
 -  Shannon capacity, to determine the
@@ -163,6 +164,7 @@ how many levels we have, we cannot achieve a data rate higher than the capacity 
 channel.
 - In other words, the formula defines a characteristic of the channel, not the method
 of transmission.
+- Refer the ppt for problems
 
 **Using both limits**
 - The Shannon capacity gives us the upper limit;
