@@ -1,4 +1,9 @@
 # Chapter 3
+**Before u read**
+---
+- Refer to the diagrams  slide for better understanding.
+- Pratice the questions disscused in the slide
+- 
 **Frequency**
 ---
 - **Frequency** is the rate of change with respect to time. Change in a short span of time means high frequency. Change over a long span of time means low frequency.
@@ -13,13 +18,17 @@
 **Composite Signals**
 ---
 
-- A single frequency sine wave is not useful in data communications;we need to send a composite signal, a signal made of many simple sine waves.
+- A single frequency sine wave is not useful in data communications ;we need to send a composite signal, a signal made of many simple sine waves. Since a single wave signal is more vulnerable to disturbances and sometimes it has no meaning.Eg, If we had only one single sine wave to conversion over the phone, it would make no sense and carry no information. We would just hear a buzz.
 - According to **Fourier analysis**, any composite signal is a combination of simple sine waves with different frequencies, amplitudes, and phases.
-- If the composite signal is periodic, the decomposition gives a series of signals with discrete frequencies; if the composite signal is non periodic, the decomposition
-gives a combination of sine waves with continuous frequencies
+- If the composite signal is periodic, the decomposition gives a series of signals with discrete frequencies; if the composite signal is non periodic, the decomposition gives a combination of sine waves with continuous frequencies(very imp)
+
+Basic concepts abot digital signals
 ---
-- $Bit length=propagation speed \times bit duration$
-- A digital signal is a composite analog signal with an infinite bandwidth
+- If a digital signal has $L$ levels then each level needs $\lceil\log_2{L}\rceil$(Ceiling function over log base 2) bits.
+- **Bit Rate:** Bits per second
+- **Bit Length:** The bit length is the distance one bit occupies on transmission medium.It is analogous to wavelength in digital signal
+ $$\text{Bit length}=\text{propagation speed} \times \text{bit duration}$$
+- A digital signal is a composite analog signal with an infinite bandwidth(very imp)
 
 **Transmission of Digital Signals**
 ---
