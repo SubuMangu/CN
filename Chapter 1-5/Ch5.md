@@ -15,7 +15,7 @@ modification is called **modulation** (shift keying)
 $$N=S \times r$$
 $$N:\text{bit rate}$$
 $$S:\text{baud rate}$$
-$$r:\text{Data element to signal element ratio}$$
+$$r:\text{Maximun data element to signal element ratio}$$
 
 <img src="Images/Screenshot 2024-10-02 103516.png" width="" height="">
 
