@@ -91,8 +91,6 @@ $$Bandwidth=\frac{N}{2}-0=\frac{N}{2}$$
 
 - You can see below the mechanism how a digital signal is transmitted through broadband transmission 
 
-<img src="Images1/Screenshot 2024-09-25 225641.png" width="" height=""> 
-
 <img src="Images/Screenshot 2024-09-25 225641.png" width="" height=""> 
 
 **TRANSMISSION IMPAIRMENT**
