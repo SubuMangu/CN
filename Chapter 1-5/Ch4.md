@@ -1,8 +1,10 @@
 # Chapter 4
 **Introduction**
+--
 - Conversion of digital data to electrical signals is necessary for transmission.
 - These electrical signals can be analogue or digital.
 - We will discuss in this chapter about how we can convert the digital data into signals.
+  
 **Digital to digital conversion**
 ---
 - In this section, we see how we can represent digital data by using digital signals.
