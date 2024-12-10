@@ -11,7 +11,7 @@
 
 **Phase**
 ---
-- Phase describes the position of the waveform relative to time O.
+- Phase describes the position of the waveform relative to time zero.
 
 <img src="Images/Screenshot 2024-09-25 212006.png" width="" height="">
 
